@@ -15,6 +15,15 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
+app.get('/files/*', function(req, res){
+  res.render('template');
+});
+
+app.post('/', function(req, res){
+  console.log(req);
+  res.redirect('/files/' + req.body.file);
+});
+
 
 app.listen(8082);
 
