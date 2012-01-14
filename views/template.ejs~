@@ -1,3 +1,4 @@
+<% document.write(blank); %>
 <form> 
 <textarea name = "document" id = "box"> </textarea><br>
 <input type = "submit" value = "Save" id = "button"/>

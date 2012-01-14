@@ -16,11 +16,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/files/*', function(req, res){
-  res.render('template');
+  console.log(req.params[0]);
+  res.render('template', {blank: req.params[0]});
 });
 
 app.post('/', function(req, res){
-  console.log(req);
   res.redirect('/files/' + req.body.file);
 });
 
