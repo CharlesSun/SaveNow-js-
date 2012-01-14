@@ -1,5 +1,5 @@
-<% document.write(blank); %>
-<form> 
-<textarea name = "document" id = "box"> </textarea><br>
-<input type = "submit" value = "Save" id = "button"/>
+The file name is: <%-title%>
+<form method = 'post'> 
+<textarea name = "document" id = "box"><%-content%></textarea><br>
+<input type = "submit" value = "Save" name = "save"/>
 </form>
